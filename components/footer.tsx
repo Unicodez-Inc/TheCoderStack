@@ -2,8 +2,6 @@
 
 import { useRef } from "react";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Zap, Linkedin, Mail, Phone, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 import { toast } from "sonner";
@@ -130,7 +128,7 @@ export function Footer() {
           viewport={{ once: true }}
         >
           <p className="text-muted-foreground text-sm mb-4 sm:mb-0">
-            © {new Date().getFullYear()} The Code Stack. All rights reserved.
+            © {new Date().getFullYear()} The Coder Stack. All rights reserved.
           </p>
           <div className="flex items-center space-x-4">
             {socialLinks.map((social) => (
