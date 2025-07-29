@@ -8,28 +8,20 @@ import { ContactFormModal } from "./contact-form-modal";
 
 const team = [
   {
-    name: "Pramod Shukl",
-    role: "CEO",
+    name: "Ravi Shrivastava",
+    role: "Director",
     icon: Crown,
     description:
-      "Visionary strategist and serial founder with a track record of scaling tech ventures. Drives Coderstack’s vision and growth with a deep focus on impact and innovation.",
+      "Results-driven director with a curious mind and deep technical knowledge. Adept at working with complex systems from machine operations to circuit boards. Fosters a collaborative, high-performance culture grounded in precision and innovation.",
     gradient: "from-blue-500 to-cyan-500",
   },
   {
-    name: "Anmol Shrivastava",
-    role: "CFO",
+    name: "Robin Shah",
+    role: "Vice President",
     icon: Gem,
     description:
-      "Finance leader with experience across venture-backed startups and SaaS growth. Builds sustainable models to turn innovation into scale.",
+      "Strategic leader spearheading operational excellence and market expansion. Drives cross-functional initiatives to optimize workflows and enhance Coderstack’s global reach.",
     gradient: "from-purple-500 to-pink-500",
-  },
-  {
-    name: "Saurav Yadav",
-    role: "CTO",
-    icon: Rocket,
-    description:
-      "Tech architect with expertise in GenAI, LLMs, and cloud systems. Leads product, engineering, and the evolving Coderstack stack.",
-    gradient: "from-orange-500 to-red-500",
   },
 ];
 
@@ -67,7 +59,7 @@ export function AboutUsSection() {
           <h4 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-12">
             Meet the <span className="text-gradient">Core Team</span>
           </h4>
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {team.map((member, index) => (
               <motion.div
                 key={member.name}
